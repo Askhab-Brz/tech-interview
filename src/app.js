@@ -4,7 +4,7 @@ import dotenv from "dotenv";
 import routes from "./routes.js"; 
 
 const app = express();
-
+dotenv.config()
 app.use(bodyParser.json());
 app.use("/", routes);
 
